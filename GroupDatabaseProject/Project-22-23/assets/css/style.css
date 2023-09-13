@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+:root {
+    --nav-height: 80px;
+    --cool-blue: #0077C8 ;
+    --dark-grey: #4C4C4C;
+    --accent-hover: #FDB813;
+    --bg-sect-div: #F2F2F2;
+    --green: #00A651;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: var(--nav-height);
+    padding: 0 15px;
+    background-color:  var(--bg-sect-div);
+    border-bottom: 1px solid #77FFBB;
+} 
+
+.nav-container .nav-buffer {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100vh - var(--nav-height));
+}
+
+body {
+    background: var(--cool-blue);
+}
+
+.login-container .login-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-sect-div);
+    border: 1px rgb(158, 158, 158) solid;
+    height: 500px;
+    width: 400px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .login-box i {
+    margin-bottom: 40px;
+    font-size: 48px;
+}
+
+.login-container .login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container .login-box form .input {
+    background-color: var(--bg-sect-div);
+    border: none;
+    height: 40px;
+    padding: 0 10px;
+    margin: 4px 0;
+    border-bottom: solid rgb(83, 83, 83) 1px;
+}
+
+.login-container .login-box form .input:focus {
+    outline: none;
+    border-bottom: solid rgb(16, 106, 241) 1px;
+}
+
+.login-container .login-box form a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-size: 14px;
+}
+
+.login-container .login-box form p {
+    text-align: center;
+}
+
+.login-container .login-box form .submit {
+    border: none;
+    background-color: var(--bg-sect-div);
+    margin: 4px 50px;
+    border-radius: 10px;
+    padding: 10px 0;
+    color: rgb(97, 97, 97);
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+.login-container .login-box form .submit:hover {
+    transition: all 0.4s ease 0s;
+    border: solid rgb(16, 106, 241) 1px;
+}
